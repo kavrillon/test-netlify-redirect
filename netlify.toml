@@ -1,0 +1,17 @@
+[build] 
+  publish = "dist"
+  command = "yarn build"
+
+[[redirects]]
+  from = "/a"
+  to = "https://kan-test-netlify-functions.netlify.com/.netlify/functions/from"
+  status = 200
+  force = true
+  headers = {X-From = "SLUG-A", X-Custom-Token = "my custom token"}
+
+[[redirects]]
+  from = "/b"
+  to = "https://kan-test-netlify-functions.netlify.com/.netlify/functions/from"
+  status = 200
+  force = true
+  headers = {X-From = "SLUG-B", X-Custom-Token = "my custom token"}
