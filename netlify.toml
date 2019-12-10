@@ -3,15 +3,15 @@
   command = "yarn build"
 
 [[redirects]]
-  from = "/a"
+  from = "/host1"
   to = "https://kan-test-netlify-functions.netlify.com/.netlify/functions/from"
   status = 200
   force = true
-  headers = {X-From = "SLUG-A", X-Custom-Token = "my custom token"}
+  headers = {X-From = "SLUG-A", X-Netlify-Hostname: "host1.com"}
 
 [[redirects]]
-  from = "/b"
+  from = "/host2"
   to = "https://kan-test-netlify-functions.netlify.com/.netlify/functions/from"
   status = 200
   force = true
-  headers = {X-From = "SLUG-B", X-Custom-Token = "my custom token"}
+  headers = {X-From = "SLUG-B", X-Netlify-Hostname: "host2.com"}
