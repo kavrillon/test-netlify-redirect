@@ -15,17 +15,3 @@
   status = 200
   force = true
   headers = {X-From = "SLUG-B", X-Netlify-Hostname = "b.com"}
-
-[[redirects]]
-  from = "/c"
-  to = "https://kan-test-netlify-functions.netlify.com/test1"
-  status = 200
-  force = true
-  headers = {X-From = "SLUG-A", X-Netlify-Hostname = "c.com"}
-
-[[redirects]]
-  from = "/d"
-  to = "https://kan-test-netlify-functions.netlify.com/test2"
-  status = 200
-  force = true
-  headers = {X-From = "SLUG-B", X-Netlify-Hostname = "d.com"}
